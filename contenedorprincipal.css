@@ -1,0 +1,138 @@
+ 
+*{
+margin: 0 px;
+  padding: 0 px;
+  box-sizing: border-box;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5em;
+  background-color: #ffffff;
+}
+.contenedorPrincipal{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+titulo{
+
+  color: rgb(253, 253, 253);
+ 
+}
+header{
+  background-color: #3962d1;
+  overflow: hidden; /* Para limpiar los float: La técnica de corregir los problemas creados por los elementos posicionados de forma flotante se suele denominar "limpiar los float". */
+  width: 100%;
+}
+header nav ul li{
+  list-style: none;
+  float: left;
+ 
+}
+header nav ul li a{
+  text-decoration: none;
+  padding: 15px 20px 15px 20px;
+  display: inline-block;
+  color: #ffffff;
+}
+header nav ul li a:hover{
+  text-decoration: none;
+  padding: 15px 20px 15px 20px;
+  display: inline-block;
+  background-color: #ffffff;
+  color: white;
+}
+main{
+  /*clear: both;*/
+  background-color: rgb(255, 255, 255);
+  width: 70%;
+  float: left;
+}
+main img{
+  max-width: 100%;
+
+}
+main section{
+    
+  padding: 30px;
+  background-color: rgb(255, 255, 255);
+}
+main section p{
+    color: rgb(0, 0, 0);
+  text-align: justify;
+  margin-bottom: 16px;
+}
+main h1{
+  margin-bottom: 10px;
+  color: #3962d1;
+}
+
+aside{
+  width: 30%;
+  float: left;
+  background-color:#fdfdfd;
+  padding: 30px;
+}
+aside ul li{
+  text-decoration: none;
+  color: black;
+}
+aside ul li:hover{
+  color: #1bd133;
+}
+aside ul li{
+  list-style: none;
+  margin-bottom: 16px;
+  border-bottom: 1px solid rgb(55, 0, 255);
+}
+aside h4{
+  color: rgb(17, 0, 255);
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+footer{
+  width: 70%;
+  clear: both;
+  padding: 60px;
+  background-color: #b8089a;
+}
+footer p{
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+@media screen and (max-width: 800px) {
+  main{
+    width:100%;
+    display:block;
+  }
+  aside{
+    width: 100%;
+    display:block;
+  }
+  footer{
+    width: 100%;
+    display: block;
+  }
+}
+<style>
+ul.menured * {margin: 0 auto; padding: 0; text-indent: 0;
+-moz-transition: all .5s ease-in-out;-webkit-transition: all .5s ease-in-out;transition: all .5s ease-in-out;}
+
+ul.menured {list-style: none; width: 1800px; max-width: 100%; margin: 0 auto; text-align: center;}
+
+ul.menured li {position: relative; display:inline-block; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; width:44px; height: 44px; overflow: hidden; margin: 2px; padding: 5px; border-radius: 44px; border: 1px solid transparent; background: #fff;
+-moz-box-shadow: 1px 1px 3px #555; -webkit-box-shadow: 1px 1px 3px #555; box-shadow: 1px 1px 3px #555;}
+
+ul.menured li a[class^=red] {position: absolute; top: 5px; left: 5px; display: block;width: 32px;height: 32px; -moz-transform: rotate(0deg); -webkit-transform: rotate(0deg); transform: rotate(0deg);}
+
+a.red1 {background:url(http://2.bp.blogspot.com/-BLOpL79hRq0/UdNeyumjXYI/AAAAAAAAK7E/4gCBEFR4JRk/s32/home.png) no-repeat;}
+a.red2 {background:url(http://2.bp.blogspot.com/-rvP0hlwHzEk/UdNeoq9rEgI/AAAAAAAAK60/Nq_kzwUPiFY/s32/info.png) no-repeat;}
+a.red4 {background:url(http://4.bp.blogspot.com/-kyZIdwOjJmI/UdNen_SC6dI/AAAAAAAAK6s/BpmHTKLYkNg/s32/contacto.png) no-repeat;}
+
+ul.menured li div {margin: 0px 8px 5px 38px; text-align: center;}
+ul.menured li div h5 {display:inline-table; margin: auto; text-align: center; text-transform: uppercase;}
+ul.menured li div a {display: inline;margin: 0 3px;font-size: 12px; color: #F36900;}
+
+ul.menured div a:hover {color: grey;}
+ul.menured li:hover {width:240px;}
+ul.menured li:hover a[class^=red] {-moz-transform: rotate(720deg); -webkit-transform: rotate(720deg); transform: rotate(720deg);}
+</style>
